@@ -1,0 +1,17 @@
+/* COMEÇE POR AQUI */
+/* Celulares (para telas entre 360px e 576px) */
+@media (min-width: 360px) and (max-width: 576px) {
+   
+}
+
+/* DEPOIS AQUI */
+/* Tablet (para telas entre 576px e 768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* E POR ULTIMO AQUI */
+/* Desktop (para telas entre 768px e 1024px) */
+@media (min-width: 768px){
+
+}

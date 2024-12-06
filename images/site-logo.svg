@@ -1,0 +1,55 @@
+<svg id="robo2_copy_4" data-name="robo2 copy 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="700" viewBox="0 0 700 700">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        stroke: #fff;
+        stroke-width: 40px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-4 {
+        opacity: 0.9;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="350.5" y1="514" x2="350.5" y2="229" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b1b1b"/>
+      <stop offset="1" stop-color="#282828"/>
+    </linearGradient>
+    <filter id="filter" x="127" y="249" width="445" height="245" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="7.746" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#090909"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="12"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M241.006,229h219a133,133,0,0,1,133,133v19a133,133,0,0,1-133,133h-219a133,133,0,0,1-133-133V362A133,133,0,0,1,241.006,229Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" d="M230.007,248.993H468.993a103,103,0,0,1,103,103v39.014a103,103,0,0,1-103,103H230.007a103,103,0,0,1-103-103V351.993A103,103,0,0,1,230.007,248.993Z"/>
+  <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-3" d="M241.006,229h219a133,133,0,0,1,133,133v19a133,133,0,0,1-133,133h-219a133,133,0,0,1-133-133V362A133,133,0,0,1,241.006,229Z"/>
+  <image id="Layer_1_copy" data-name="Layer 1 copy" class="cls-4" x="474" y="267" width="71" height="69" xlink:href="data:img/png;base64,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"/>
+  <path class="cls-5" d="M331.577,166h34.936v70H331.577V166h0Z"/>
+  <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" class="cls-6" cx="612.781" cy="367" r="40.219"/>
+  <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" class="cls-6" cx="87.531" cy="371.5" r="40.531"/>
+  <circle class="cls-6" cx="269.859" cy="367" r="42.953"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-6" cx="430.39" cy="367" r="42.922"/>
+</svg>
