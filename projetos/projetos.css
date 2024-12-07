@@ -3,7 +3,7 @@
 }
 
 .card-list {
-    padding-top: 100px;
+    padding-block: 100px;
     justify-content: center;
     list-style: none;
     display: grid;
