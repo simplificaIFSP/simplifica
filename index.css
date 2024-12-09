@@ -1,17 +1,173 @@
 /* COMEÇE POR AQUI */
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
-   
-}
-
-/* DEPOIS AQUI */
-/* Tablet (para telas entre 576px e 768px) */
-@media (min-width: 576px) and (max-width: 767px) {
-    
-}
-
-/* E POR ULTIMO AQUI */
-/* Desktop (para telas entre 768px e 1024px) */
-@media (min-width: 768px){
-
-}
+    #head{
+     margin-top: 50px;
+     font-size: 1.5rem;
+     font-weight: 800;
+    }
+    #headGrad{
+     font-size: 1.5rem;
+     font-weight: 800;
+     background: -webkit-linear-gradient(bottom left, #57A57F, #88BC98);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    }
+    #hero div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 18%;
+     margin-right: 18%;
+     text-align: center;
+    }
+    #hero div.btns{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 6%;
+     margin-right: 6%;
+     text-align: center;
+    }
+    .sobreNos{
+     margin: 5%;
+     padding: 14px 12px;
+     border: 1px solid #595E5A;
+     border-radius: 8px;
+     background-color: #1f2420;
+     color: #595E5A;
+     font-weight: 600;
+     cursor: pointer;
+     font-size: 14px;
+     text-decoration: none;
+    }
+    .saibaMais{
+     background-image: linear-gradient(to right, #204744 0%,#409274  51%, #88BC98  100%);
+     margin: 5%;
+     padding: 14px 12px;
+     border-radius: 8px;
+     color: #FFFFFF;
+     font-size: 14px;
+     font-weight: 600;
+     border: 0;
+     text-decoration: none;
+    }
+ }
+ 
+ /* DEPOIS AQUI */
+ /* Tablet (para telas entre 576px e 768px) */
+ @media (min-width: 576px) and (max-width: 767px) {
+     #head{
+     margin-top: 50px;
+     font-size: 2rem;
+     font-weight: 800;
+     }
+     #headGrad{
+     font-size: 2rem;
+     font-weight: 800;
+     background: -webkit-linear-gradient(bottom left, #57A57F, #88BC98);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     }
+     #hero div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 18%;
+     margin-right: 18%;
+     text-align: center;
+     }
+     #hero div.btns{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 6%;
+     margin-right: 6%;
+     text-align: center;
+     }
+     .sobreNos{
+     margin: 10%;
+     padding: 14px 16px;
+     border: 1px solid #595E5A;
+     border-radius: 8px;
+     background-color: #1f2420;
+     color: #595E5A;
+     font-weight: 600;
+     cursor: pointer;
+     font-size: 14px;
+     text-decoration: none;
+     }
+     .saibaMais{
+     background-image: linear-gradient(to right, #204744 0%,#409274  51%, #88BC98  100%);
+     margin: 10%;
+     padding: 14px 16px;
+     border-radius: 8px;
+     color: #FFFFFF;
+     font-size: 14px;
+     font-weight: 600;
+     border: 0;
+     text-decoration: none;
+     }
+ }
+ 
+ /* E POR ULTIMO AQUI */
+ /* Desktop (para telas entre 768px e 1024px) */
+ @media (min-width: 768px){
+     #head{
+     margin-top: 50px;
+     font-size: 2.5rem;
+     font-weight: 800;
+     }
+     #headGrad{
+     font-size: 2.5rem;
+     font-weight: 800;
+     background: -webkit-linear-gradient(bottom left, #57A57F, #88BC98);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     }
+     #hero div{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 18%;
+     margin-right: 18%;
+     text-align: center;
+     }
+     #hero div.btns{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     margin-left: 6%;
+     margin-right: 6%;
+     text-align: center;
+     }
+     .sobreNos{
+     margin: 5%;
+     padding: 14px 40px;
+     border: 1px solid #595E5A;
+     border-radius: 8px;
+     background-color: #1f2420;
+     color: #595E5A;
+     font-weight: 600;
+     cursor: pointer;
+     font-size: 14px;
+     text-decoration: none;
+     }
+     .saibaMais{
+     background-image: linear-gradient(to right, #204744 0%,#409274  51%, #88BC98  100%);
+     margin: 5%;
+     padding: 14px 40px;
+     border-radius: 8px;
+     color: #FFFFFF;
+     font-size: 14px;
+     font-weight: 600;
+     border: 0;
+     text-decoration: none;
+     }
+ }
