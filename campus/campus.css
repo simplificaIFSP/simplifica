@@ -1,17 +1,109 @@
 /* COMEÇE POR AQUI */
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
-
 }
 
 /* DEPOIS AQUI */
 /* Tablet (para telas entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
-
 }
 
 /* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+}
 
+/** título **/
+#title_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+#title_container h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: #216968;
+}
+
+#title_container p {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+/** imagens **/
+#images_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+}
+
+/** números **/
+#numbers_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#numbers_container .left,
+#numbers_container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#numbers_container h1 {
+  font-size: 30px;
+}
+
+#numbers_container .big {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  width: 70%;
+  gap: 10px;
+}
+
+#numbers_container .big h1 {
+  font-size: 50px;
+}
+
+#numbers_container .right div:last-child {
+  width: 60%;
+  align-self: end;
+  text-align: end;
+}
+
+/** mapa **/
+
+#map_container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  padding-bottom: 0;
+  margin-bottom: 4rem;
+}
+
+#map_container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* efeito de fade */
+#map_container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, #1f2420);
+  pointer-events: none;
 }
