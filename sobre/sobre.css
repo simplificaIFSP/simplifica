@@ -1,17 +1,58 @@
 /* COMEÇE POR AQUI */
+
+/*id das imagens sobre
+    #formacao-icone
+    #diversidade-icone
+    #diversidade-foto
+    #desenvolvimento-icone
+    #desenvolvimento-foto
+    #impacto-icone
+*/
+
+h1 {
+    color: var(--verde-marinho);
+    font-weight: 900;
+}
+
+p {
+    color: var(--branco);
+    font-weight: 200;
+}
+
+#formacao, #desenvolvimento {
+    text-align: left;
+}
+
+#diversidade, #impacto {
+    text-align: right;
+}
+
+img {
+    width: 200px; /*Tamanho temporário. Apagar após definir o tamanho para desktop e mobile*/
+}
+
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
-
+    #formacao, #diversidade, #desenvolvimento, #impacto {
+       /*margin: 40px;*/
+       margin: 6%;  
+    }
 }
 
 /* DEPOIS AQUI */
 /* Tablet (para telas entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
-
+    #formacao, #diversidade, #desenvolvimento, #impacto {
+        /*margin: 40px;*/
+        margin: 6%;     
+     }
 }
 
 /* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-
+@media (min-width: 768px){
+    #formacao, #diversidade, #desenvolvimento, #impacto {
+        /*margin: 40px;*/
+        margin: 6%;
+     }
 }
