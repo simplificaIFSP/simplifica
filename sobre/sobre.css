@@ -2,16 +2,145 @@
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
 
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* eu odeio comic sans,mas foi a pimeira que apareceu e nao sei qual fonte vcs vão usar*/
+    font-family: 'Arial', sans-serif;
+    background-color: #172420; /* Fundo principal */
+    color: #ACDED0; /* Texto principal */
+    line-height: 1.5;
+    padding: 16px;
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    color: #49B776; /* Cor do título */
+    margin-bottom: 12px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Links no menu */
+  nav a {
+    text-decoration: none;
+    color: #ACDED0; /* Cor do texto no menu */
+    margin-right: 12px;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    color: #49B776; /* Destaque ao passar o mouse */
+  }
+  
+  /* Seções */
+  section {
+    margin-bottom: 24px;
+  }
+  
+  /* Estilo para Cards */
+  .card {
+    background-color: #216056; /* Fundo do card */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+  
+  .card h3 {
+    color: #ACDED0; /* Texto do card */
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #80C8A2;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #49B776;
+    color: #172420;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #216056;
+  }
+  
+ 
+ 
+
 }
 
 /* DEPOIS AQUI */
 /* Tablet (para telas entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
 
-}
+    body {
+      padding: 24px;
+    }
+  
+    nav a {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .card {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .card img {
+      max-width: 80px;
+      margin-right: 16px;
+    }
+  }
+  
 
 /* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-}
+    body {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      margin-bottom: 24px;
+    }
+  }
+  
