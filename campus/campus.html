@@ -1,82 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ICONE DO SITE -->
-    <link rel="shortcut icon" href="./images/site-logo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/site-logo.svg"
+      type="image/x-icon"
+    />
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- FONTE DO SITE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS GERAL -->
-    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../general.css" />
     <!-- CSS DA PÁGINA -->
-    <link rel="stylesheet" href="campus.css">
+    <link rel="stylesheet" href="campus.css" />
     <title>O Campus</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <header class="header_hero">
+      <div class="logo_header">
+        <img
+          class="logo-img"
+          src="../images/site-logo.svg"
+          alt="Logo do site"
+        />
+      </div>
 
-        <div class="logo_header">
-            <img class="logo-img" src="../images/site-logo.svg" alt="Logo do site">
-        </div>
+      <nav class="nav_header">
+        <ul class="ul_header">
+          <li class="li_header">
+            <a class="a_header" href="../index.html">INÍCIO</a>
+          </li>
+          <li class="li_header"><a class="a_header" href="#">CAMPUS</a></li>
+          <li class="li_header">
+            <a class="a_header" href="../projetos/projetos.html">PROJETO</a>
+          </li>
+          <li class="li_header">
+            <a class="a_header" href="../sobre/sobre.html">SOBRE NÓS</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="nav_header">
-            <ul class="ul_header">
-                <li class="li_header"><a class="a_header" href="home">INÍCIO</a></li>
-                <li><a class="a_header" href="campus">CAMPUS</a></li>
-                <li><a class="a_header" href="projeto">PROJETO</a></li>
-                <li><a class="a_header" href="sobre">SOBRE NÓS</a></li>
-            </ul>
-        </nav>
-
-        <div class="espaco_header"></div>
-
-     </header>
+      <div class="espaco_header"></div>
+    </header>
     <!-- FIM NAVBAR -->
 
-
     <!-- TELA DO CAMPUS -->
+    <main>
+      <section id="title_container">
+        <h1>Infraestrutura do Campus</h1>
+        <p>
+          Ambientes modernos e recursos avançados para potencializar a formação
+          acadêmica e prática dos alunos.
+        </p>
+      </section>
 
+      <section id="images_container">
+        <!-- adicionar aqui as imagens após acesso à elas -->
+      </section>
+
+      <section id="numbers_container">
+        <div class="left">
+          <div>
+            <h1>24</h1>
+            <p>Laboratórios especializados</p>
+          </div>
+          <div>
+            <h1>3</h1>
+            <p>Espaços dedicados à Pesquisa</p>
+          </div>
+          <div>
+            <h1>2</h1>
+            <p>Auditórios Modernos</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="big">
+            <h1>16</h1>
+            <p>Salas de Aula Teórica</p>
+          </div>
+          <div>
+            <h1>2</h1>
+            <p>Salas de Desenho Técnico</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="map_container">
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?q=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FInstituto%2BFederal%2Bde%2BEduca%25C3%25A7%25C3%25A3o%2C%2BCi%25C3%25AAncia%2Be%2BTecnologia%2Bde%2BS%25C3%25A3o%2BPaulo%2BIFSP%2BGuarulhos%2F%40-23.4388276%2C-46.5373914%2C15z%2Fdata%3D!4m6!3m5!1s0x94cef51fbe5f8681%3A0x1f8cf929993dc97!8m2!3d-23.4388276!4d-46.5373914!16s%252Fg%252F1tfmdck2%3Fentry%3Dttu%26g_ep%3DEgoyMDI0MTIwNC4wIKXMDSoASAFQAw%253D%253D&key=AIzaSyD_joTUHuHwKyMJ_ptv9RGNLSYbWG4jloo"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
     <!-- FIM DA TELA DO CAMPUS -->
-
 
     <!-- FOOTER -->
     <footer class="footer">
-        <section class="footer_borda">
-            <div class="footer_left">
-                <div class="juncao">
-                    <h1 class="title_footer">SITE</h1>
-                    <nav class="nav_footer">
-                        <ul class="ul_footer">
-                            <li class="li_footer"><a class="a_footer footer_link" href="home">INÍCIO</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="campus">CAMPUS</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="projeto">PROJETO</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="sobre">SOBRE NÓS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <section class="footer_borda">
+        <div class="footer_left">
+          <div class="juncao">
+            <h1 class="title_footer">SITE</h1>
+            <nav class="nav_footer">
+              <ul class="ul_footer">
+                <li class="li_footer">
+                  <a class="a_footer footer_link" href="../index.html"
+                    >INÍCIO</a
+                  >
+                </li>
+                <li class="li_footer">
+                  <a class="a_footer footer_link" href="#">CAMPUS</a>
+                </li>
+                <li class="li_footer">
+                  <a
+                    class="a_footer footer_link"
+                    href="../projetos/projetos.html"
+                    >PROJETO</a
+                  >
+                </li>
+                <li class="li_footer">
+                  <a class="a_footer footer_link" href="../sobre/sobre.html"
+                    >SOBRE NÓS</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
-            <div class="footer_center">
-                <h1 class="title_footer">CONTATO</h1>
-                <h1 class="title_footer">DRG - Diretoria Geral</h1>
-                <p class="paragrafo_footer">Prof. Ricardo Augustinho de Rezende Junior</p>
-                <p class="paragrafo_footer">E-mail: <a class="a_footer" href="mailto:dggru@ifsp.edu.br">dggru@ifsp.edu.br</a></p>
-                <h1 class="title_footer">Análise e Desenvolvimento de Sistemas</h1>
-                <p class="paragrafo_footer">Prof. Rogério Homem da Costa</p>
-                <p class="paragrafo_footer">E-mail: <a class="a_footer" href="mailto:dggru@ifsp.edu.br">coordenacao_ads.gru@ifsp.edu.br</a></p>
-            </div>
-
-            <div class="footer_right">
-                <p class="paragrafo_footer">"Projetado e desenvolvido pela turma do segundo semestre de Análise e Desenvolvimento de Sistemas (2024)."</p>
-            </div>
-        </section>                 
-     </footer>
+        <div class="footer_center">
+          <h1 class="title_footer">CONTATO</h1>
+          <h1 class="title_footer">DRG - Diretoria Geral</h1>
+          <p class="paragrafo_footer">
+            Prof. Ricardo Augustinho de Rezende Junior
+          </p>
+          <p class="paragrafo_footer">
+            E-mail:
+            <a class="a_footer" href="mailto:dggru@ifsp.edu.br"
+              >dggru@ifsp.edu.br</a
+            >
+          </p>
+          <h1 class="title_footer">Análise e Desenvolvimento de Sistemas</h1>
+          <p class="paragrafo_footer">Prof. Rogério Homem da Costa</p>
+          <p class="paragrafo_footer">
+            E-mail:
+            <a class="a_footer" href="mailto:dggru@ifsp.edu.br"
+              >coordenacao_ads.gru@ifsp.edu.br</a
+            >
+          </p>
+          </div>
+        <div class="footer_right">
+          <p class="paragrafo_footer">
+            "Projetado e desenvolvido pela turma do segundo semestre de Análise
+            e Desenvolvimento de Sistemas (2024)."
+          </p>
+        </div>
+      </section>
+    </footer>
     <!-- FIM DO FOOTER -->
-</body>
+  </body>
 </html>

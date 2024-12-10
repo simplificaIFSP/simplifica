@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ICONE DO SITE -->
-    <link rel="shortcut icon" href="./images/site-logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/site-logo.svg" type="image/x-icon">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FONTE DO SITE -->
@@ -27,10 +27,10 @@
 
         <nav class="nav_header">
             <ul class="ul_header">
-                <li class="li_header"><a class="a_header" href="home">INÍCIO</a></li>
-                <li><a class="a_header" href="campus">CAMPUS</a></li>
-                <li><a class="a_header" href="projeto">PROJETO</a></li>
-                <li><a class="a_header" href="sobre">SOBRE NÓS</a></li>
+                <li class="li_header"><a class="a_header" href="../index.html">INÍCIO</a></li>
+                <li class="li_header"><a class="a_header" href="../campus/campus.html">CAMPUS</a></li>
+                <li class="li_header"><a class="a_header" href="#">PROJETO</a></li>
+                <li class="li_header"><a class="a_header" href="../sobre/sobre.html">SOBRE NÓS</a></li>
             </ul>
         </nav>
 
@@ -41,7 +41,48 @@
 
 
     <!-- TELA DE PROJETOS -->
-
+    <ul class="card-list">
+        <li class="card-item">
+            <i class="fa-solid fa-handshake-simple"></i>
+            <h3>Conectivo</h3>
+            <p>Fortalece a relação entre o IFSP e a comunidade, criando um vínculo direto e significativo.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Assertivo</h3>
+            <p>Identifica as necessidades reais de empresas e organizações, direcionando soluções eficazes.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-solid fa-shield"></i>
+            <h3>Confiável</h3>
+            <p>Constrói relações de confiança e colaboração mútua com os atores locais.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h3>Inovador</h3>
+            <p>Reforça o papel do IFSP como um centro de inovação e desenvolvimento na região.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Prático</h3>
+            <p>Oferece soluções técnicas e personalizadas que impactam positivamente a comunidade.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Formativo</h3>
+            <p>Proporciona aos alunos vivências reais do mercado, fortalecendo sua formação prática.</p>
+        </li>
+        <li class="card-item">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Impactante</h3>
+            <p>Contribui diretamente para o crescimento socioeconômico de Guarulhos.</p>
+        </li>
+        <li class="card-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD20lEQVR4nO1ZS4hcRRR9kyj4J4oB0YXgb2XECLrxC/G/0YjBDyKISyUo4iobfwsRIahkozASRBT/qCEL0VEwQmDA32R6+t1zX91b4yQIiYi4SjJ5crsnM5m2u997VTVmhD5Qm+56p+6591bdevdl2QgjjDDC/xZt564mT3fm+/P12SpFvj9fD4e7zNa+E6B4C8qlDRIcJeUvIbg+WyVg5RtIeZfZdtxOKN5cNil3+calP3uG4FsjOYkCboTgu0H2LYsMHO4eKKQboWMkPD4zN3P+f5lCJPy2rT3MNrN9SfUsXzV08mJ0+CA8HltxEcKPk+BQHZvY84bFB386cOBMKB+uJaabmx8659alFuCcW0eKj+rbwYfN9mUkUP6hAUFJypryMGDP10KZG9rw/b+ISPn5JiQLqXaEhJ+IFUHCTxoXGq5Pys/188iGxkKWCF8ry3JNUwFlWY6ZMaHrwuPKQZ75NULMJ3Nzc2fUFeGcOw3C7wevJ/zLQHJS3hbsne6Y8N6fXiXC5gyrDajnuG0DF2hr+5LKc7ty3+DziXLilEFrlGW5lpQ/jnRYSZ4uG+otEuyNXQTCOy3/+4gYg+KdaBGCvVVRz3Llp6OFDDhRSPnFFNxQPFUppO3bF5FgPoHXjto9aVGEo1sS8c63VC/M6gDK3yTxnPCU7RcbUEyniTS+qiWiI8Rhc5oU4DIXfoSUHk3FR0r31BZiJwsURSoPkvLXiYSw2ZY1ATt+OIkQwaG6N1lUR+OBLAQkvD1VSsQPvJrFINfidgh2QPFBv7FQ3PYtfwWtHS17Zl+Xoz8/BDtY+bYsNbz355EWW6B4A8p7IPg72ttdjj1Qfj0Xvl9Vz81WClYHIPxZiOeDIiX8ae6Lm5MJaLVaZ9uV42TtDRIen/p96qwoEd0LHr6IMkT5Tyj/FZd6vLvxsXsiIHg2wWkzTYpWdGQcPxMajTEIz0YboPwuCb8XzwPpd6OuRFEUFyfJc48H4fFQEq5ZXN5YiHVIohcWPmjtGhspqjv54o7GQuxylvKdJKhLo71C6N6wuhGX039Y8TzOZ0Wu06mM4Gz74qbGQuzlJS6tsLWX034LdozgmHPugsZCOlER/By2MKYnJydP7eWz38KPYvwYJKLjwcDTxj4WDeJk5VvDUrXYEixkoZbsbFo3qnib1hUSHg+qIb3pAMFLdXqz1tiuc3Nd2Pi+ep/xEVJ+YVifrDGsIUbKr5Bipl83pLOfGhQs/o2vsLZnH55520ek/HKu+aXZSiLP83NI6BoINsHhPvZ8XWATe40922l2CDbZJ0DjXhmrRxhhhBGyVYR/AJ4yJxAzZfOOAAAAAElFTkSuQmCC" alt="Borboleta">            
+            <h3>Transformador</h3>
+            <p>Mostra que a educação vai além da sala de aula, promovendo mudanças na sociedade.</p>
+        </li>
+    </ul>
     <!-- FIM DA TELA DE PROJETOS -->
 
 
@@ -53,10 +94,10 @@
                     <h1 class="title_footer">SITE</h1>
                     <nav class="nav_footer">
                         <ul class="ul_footer">
-                            <li class="li_footer"><a class="a_footer footer_link" href="home">INÍCIO</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="campus">CAMPUS</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="projeto">PROJETO</a></li>
-                            <li class="li_footer"><a class="a_footer footer_link" href="sobre">SOBRE NÓS</a></li>
+                            <li class="li_footer"><a class="a_footer footer_link" href="../index.html">INÍCIO</a></li>
+                            <li class="li_footer"><a class="a_footer footer_link" href="../campus/campus.html">CAMPUS</a></li>
+                            <li class="li_footer"><a class="a_footer footer_link" href="#">PROJETO</a></li>
+                            <li class="li_footer"><a class="a_footer footer_link" href="../sobre/sobre.html">SOBRE NÓS</a></li>
                         </ul>
                     </nav>
                 </div>
