@@ -37,7 +37,25 @@
 #images_container {
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
   padding: 4rem 2rem;
+  gap: 4px;
+}
+
+#images_container img {
+  width: 25%;
+  height: 21vw;
+  border-radius: 10px;
+}
+
+#images_container .custom_size_1 {
+  width: 20%;
+  height: 23vw;
+}
+
+#images_container .custom_size_2 {
+  width: 30%;
+  height: 25vw;
 }
 
 /** números **/
