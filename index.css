@@ -2,16 +2,22 @@
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
     #head{
-     margin-top: 50px;
-     font-size: 1.5rem;
+     font-size: 2rem;
      font-weight: 800;
     }
     #headGrad{
-     font-size: 1.5rem;
+     font-size: 2rem;
      font-weight: 800;
      background: -webkit-linear-gradient(bottom left, #57A57F, #88BC98);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+    }
+    #hero{
+        height: 78svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.5rem;
     }
     #hero div{
      display: flex;
@@ -119,15 +125,22 @@
  @media (min-width: 768px){
      #head{
      margin-top: 50px;
-     font-size: 2.5rem;
+     font-size: 3.5rem;
      font-weight: 800;
      }
      #headGrad{
-     font-size: 2.5rem;
+     font-size: 3.5rem;
      font-weight: 800;
      background: -webkit-linear-gradient(bottom left, #57A57F, #88BC98);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     }
+     #hero{
+        height: 88svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.5rem;
      }
      #hero div{
      display: flex;
@@ -156,7 +169,7 @@
      color: #595E5A;
      font-weight: 600;
      cursor: pointer;
-     font-size: 14px;
+     font-size: 1.25;
      text-decoration: none;
      }
      .saibaMais{
@@ -165,9 +178,14 @@
      padding: 14px 40px;
      border-radius: 8px;
      color: #FFFFFF;
-     font-size: 14px;
+     font-size: 1.25rem;
      font-weight: 600;
      border: 0;
      text-decoration: none;
+     }
+     .saibaMais, .sobreNos{
+        transition: .25s;
+     }.saibaMais:hover, .sobreNos:hover{
+        scale: 1.1;
      }
  }
