@@ -12,10 +12,14 @@
   color: #216968;
 }
 
-#title_container p {
+#title_container > p {
   font-size: 20px;
   font-weight: 300;
   color: white;
+}
+
+.localization_pill {
+  display: none;
 }
 
 /** imagens **/
@@ -126,4 +130,43 @@
 /* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .localization_pill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dce1dd;
+    border-radius: 1.5rem;
+    color: black;
+    padding: 10px 1rem;
+  }
+
+  .localization_pill p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .localization_pill span {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .localization_pill i {
+    font-size: 1.5rem;
+  }
+
+  .localization_pill > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .vertical_line {
+    width: 1px;
+    height: 2rem;
+    background: black;
+  }
+
+  #hero_container {
+    display: flex;
+  }
 }
