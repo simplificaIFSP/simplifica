@@ -333,6 +333,33 @@
 
   #map_container iframe {
     border-radius: 3rem 3rem 0 0;
-    height: 800px;
+    height: 70vh;
+  }
+}
+
+/* Ajustes de fontes para tamanhos intermediários */
+@media (min-width: 768px) and (max-width: 991px) {
+  #title_container h1 {
+    font-size: 50px;
+  }
+
+  #title_container > p {
+    font-size: 22px;
+  }
+
+  .localization_pill p {
+    font-size: 18px;
+  }
+
+  .localization_pill span {
+    font-size: 14px;
+  }
+
+  .localization_pill i {
+    font-size: 1.3rem;
+  }
+
+  .localization_pill a {
+    font-size: 18px;
   }
 }
