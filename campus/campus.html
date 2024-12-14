@@ -72,35 +72,54 @@
           <div class="localization_pill">
             <div>
               <i class="fas fa-map-marker-alt"></i>
-              <div>
+              <div class="address_text">
                 <p>Localização</p>
                 <span>Av. Salgado Filho, 3501 - Centro, Guarulhos</span>
               </div>
             </div>
             <div class="vertical_line"></div>
-            <div>
+            <a
+              class="view_on_map"
+              href="https://maps.app.goo.gl/C3e9by5jZPUDKorz8"
+              target="_blank"
+            >
               <i class="fas fa-map-marked-alt"></i>
               <p>Ver no Maps</p>
-            </div>
+            </a>
           </div>
         </section>
 
         <section id="images_container" class="popIn">
-          <img
-            class="custom_size_1"
-            src="../images/LaboratorioIFSP_2.jpeg"
-            alt="Laboratório de Informática"
-          />
-          <img
-            class="custom_size_2"
-            src="../images/SalaDeAulaIFSP_2.jpeg"
-            alt="Laboratório de Informática"
-          />
-          <img src="../images/OficinaIFSP.jpeg" alt="Oficina" />
-          <img src="../images/AuditorioIFSP.jpeg" alt="Auditório" />
+          <div class="column">
+            <div id="img_1">
+              <img
+                src="../images/LaboratorioIFSP_2.jpeg"
+                alt="Laboratório de Informática"
+              />
+            </div>
+            <div id="img_2">
+              <img
+                src="../images/SalaDeAulaIFSP_2.jpeg"
+                alt="Laboratório de Informática"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div id="img_3">
+              <img src="../images/OficinaIFSP.jpeg" alt="Oficina" />
+            </div>
+            <div id="img_4">
+              <img src="../images/AuditorioIFSP.jpeg" alt="Auditório" />
+            </div>
+          </div>
         </section>
       </section>
 
+      <div class="infra_text popIn">
+        <div class="gradient_line"></div>
+        INFRAESTRUTURA COMPLETA
+        <div class="gradient_line"></div>
+      </div>
       <section id="numbers_container" class="popIn">
         <div class="left">
           <div>
@@ -127,6 +146,9 @@
           </div>
         </div>
       </section>
+      <div class="infra_text popIn">
+        <div class="gradient_line reverse"></div>
+      </div>
 
       <section id="map_container">
         <iframe
