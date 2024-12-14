@@ -165,8 +165,13 @@ body{
 
 /* fim do footer*/
 
-
-
+/* efeito de aumentar no hover */
+.upscale{
+    transition: .25s;
+}.upscale:hover{
+    transition: .25s;
+    scale: 1.15;
+}
 
 /* COMEÇE POR AQUI */
 /* Celulares (para telas entre 360px e 576px) */
@@ -406,7 +411,7 @@ body{
 @keyframes fadeInDown {
     from{
         opacity: 0.5;
-        transform: translateY(-30px);
+        transform: translateY(-50px);
     }
 
     to{
