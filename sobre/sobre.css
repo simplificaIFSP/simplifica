@@ -31,6 +31,11 @@ p {
     font-weight: 300;
 }
 
+.container-image {
+    position: relative;
+    display: flex;
+}
+
 #formacao, #diversidade, #desenvolvimento, #impacto {
     position: relative;
     display: grid;
@@ -97,21 +102,29 @@ img {
      #diversidade p {
         grid-row: 2;
         grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        padding-bottom: 5px;
+    }
+
+    #diversidade .container-image {
+        grid-row: 3;
+        grid-column: 1;
+        position: relative;
+        justify-content: left;
+        width: 70%;
+        padding-bottom: 5%;
     }
  
      #diversidade-icone {
-        grid-row: 3;
-        grid-column: 1;
-        width: 20%;
-        position: relative;
-        top: -10%;
-        left: 40%;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
      #diversidade-foto {
-        grid-column: 1;
-        grid-row: 3;
-        width: 50%;
+        width: 75%;
+        position: relative;
+        top: 10%;
     }
     
     /*Seção DESENVOLVIMENTO*/
@@ -127,24 +140,28 @@ img {
 
      #desenvolvimento p {
         grid-row: 2;
-        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        grid-column: 1; /*Ocupar coluna 1 e 2 da 
+        linha 2*/
+        padding-bottom: 5%;
+    }
+
+    #desenvolvimento .container-image {
+        grid-row: 3;
+        grid-column: 1;
+        position: relative;
+        justify-content: right;
+        width: 100%;
     }
  
     #desenvolvimento-icone {
-        grid-row: 3;
-        grid-column: 1;
-        width: 20%;
-        position: relative;
-        bottom: -75%;
-        left: -45%;
-        justify-self: end;
+        width: 25%;
+        position: absolute;
+        right: 48%;
+        bottom: 0;
     }
 
      #desenvolvimento-foto {
-        grid-column: 1;
-        grid-row: 3;
         width: 50%;
-        justify-self: end;
     }
 
     /*Seção IMPACTO*/
@@ -173,14 +190,6 @@ img {
         top: -20%;
         left: 0;
     }
-
-    /*Para caso for adicionar foto nessa seção*/
-    /* #impacto-foto {
-        grid-column: 1;
-        grid-row: 3;
-        width: 50%;
-        justify-self: end;
-    } */
 }
 
 /* DEPOIS AQUI */
@@ -231,21 +240,29 @@ img {
      #diversidade p {
         grid-row: 2;
         grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        padding-bottom: 5px;
+    }
+
+    #diversidade .container-image {
+        grid-row: 3;
+        grid-column: 1;
+        position: relative;
+        justify-content: left;
+        width: 70%;
+        padding-bottom: 5%;
     }
  
      #diversidade-icone {
-        grid-row: 3;
-        grid-column: 1;
-        width: 20%;
-        position: relative;
-        top: -10%;
-        left: 40%;
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
      #diversidade-foto {
-        grid-column: 1;
-        grid-row: 3;
-        width: 50%;
+        width: 75%;
+        position: relative;
+        top: 10%;
     }
     
     /*Seção DESENVOLVIMENTO*/
@@ -261,24 +278,28 @@ img {
 
      #desenvolvimento p {
         grid-row: 2;
-        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        grid-column: 1; /*Ocupar coluna 1 e 2 da 
+        linha 2*/
+        padding-bottom: 5%;
+    }
+
+    #desenvolvimento .container-image {
+        grid-row: 3;
+        grid-column: 1;
+        position: relative;
+        justify-content: right;
+        width: 100%;
     }
  
     #desenvolvimento-icone {
-        grid-row: 3;
-        grid-column: 1;
-        width: 20%;
-        position: relative;
-        bottom: -75%;
-        left: -45%;
-        justify-self: end;
+        width: 25%;
+        position: absolute;
+        right: 48%;
+        bottom: 0;
     }
 
      #desenvolvimento-foto {
-        grid-column: 1;
-        grid-row: 3;
         width: 50%;
-        justify-self: end;
     }
 
     /*Seção IMPACTO*/
@@ -307,14 +328,6 @@ img {
         top: -20%;
         left: 0;
     }
-    
-    /*Para caso for adicionar foto nessa seção*/
-    /* #impacto-foto {
-        grid-column: 1;
-        grid-row: 3;
-        width: 50%;
-        justify-self: end;
-    } */
 }
 
 /* E POR ULTIMO AQUI */
