@@ -13,7 +13,7 @@
      -webkit-text-fill-color: transparent;
     }
     #hero{
-        height: 78svh;
+        min-height: 78svh;
         display: flex;
         flex-direction: column;
         justify-content: center;
