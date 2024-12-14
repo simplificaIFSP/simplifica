@@ -9,6 +9,18 @@
     #impacto-icone
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     color: var(--verde-marinho);
     font-weight: 900;
@@ -16,7 +28,14 @@ h1 {
 
 p {
     color: var(--branco);
-    font-weight: 200;
+    font-weight: 300;
+}
+
+#formacao, #diversidade, #desenvolvimento, #impacto {
+    position: relative;
+    display: grid;
+    width: 100%;
+    padding: 10%;
 }
 
 #formacao, #desenvolvimento {
@@ -28,31 +47,408 @@ p {
 }
 
 img {
-    width: 200px; /*Tamanho temporário. Apagar após definir o tamanho para desktop e mobile*/
+    width: 200px; /*Tamanho temporário. Apagar após definir o tamanho para desktop e mobile */
 }
 
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
-    #formacao, #diversidade, #desenvolvimento, #impacto {
-       /*margin: 40px;*/
-       margin: 6%;  
+    h1 {
+        font-size: 2rem;
     }
+
+    p {
+        font-size: 1.2rem;
+    }
+    /*Seção FORMAÇÃO*/
+    #formacao {
+       grid-template-columns: auto 30%; /*Duas colunas: h1 e icone*/
+       grid-template-rows: auto auto; /*Duas linhas: h1 e p*/
+    }
+
+    #formacao h1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+
+    #formacao-icone {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    #formacao p {
+        grid-row: 2;
+        grid-column: 1 / -1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+
+    /*Seção DIVERSIDADE*/
+    #diversidade {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #diversidade h1 {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 15px;
+    }
+
+     #diversidade p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+     #diversidade-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 20%;
+        position: relative;
+        top: -10%;
+        left: 40%;
+    }
+
+     #diversidade-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+    }
+    
+    /*Seção DESENVOLVIMENTO*/
+    #desenvolvimento {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #desenvolvimento h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+     #desenvolvimento p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+    #desenvolvimento-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 20%;
+        position: relative;
+        bottom: -75%;
+        left: -45%;
+        justify-self: end;
+    }
+
+     #desenvolvimento-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+        justify-self: end;
+    }
+
+    /*Seção IMPACTO*/
+    #impacto {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #impacto h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+     #impacto p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        justify-self: end;
+        width: 85%;
+    }
+ 
+    #impacto-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 35%;
+        position: relative;
+        top: -20%;
+        left: 0;
+    }
+
+    /*Para caso for adicionar foto nessa seção*/
+    /* #impacto-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+        justify-self: end;
+    } */
 }
 
 /* DEPOIS AQUI */
 /* Tablet (para telas entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
-    #formacao, #diversidade, #desenvolvimento, #impacto {
-        /*margin: 40px;*/
-        margin: 6%;     
-     }
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    /*Seção FORMAÇÃO*/
+    #formacao {
+       grid-template-columns: auto 30%; /*Duas colunas: h1 e icone*/
+       grid-template-rows: auto auto; /*Duas linhas: h1 e p*/
+    }
+
+    #formacao h1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+
+    #formacao-icone {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    #formacao p {
+        grid-row: 2;
+        grid-column: 1 / -1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+
+    /*Seção DIVERSIDADE*/
+    #diversidade {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #diversidade h1 {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 15px;
+    }
+
+     #diversidade p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+     #diversidade-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 20%;
+        position: relative;
+        top: -10%;
+        left: 40%;
+    }
+
+     #diversidade-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+    }
+    
+    /*Seção DESENVOLVIMENTO*/
+    #desenvolvimento {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #desenvolvimento h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+     #desenvolvimento p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+    #desenvolvimento-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 20%;
+        position: relative;
+        bottom: -75%;
+        left: -45%;
+        justify-self: end;
+    }
+
+     #desenvolvimento-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+        justify-self: end;
+    }
+
+    /*Seção IMPACTO*/
+    #impacto {
+        grid-template-columns: auto; /*1 coluna*/
+        grid-template-rows: auto auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #impacto h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+     #impacto p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+        justify-self: end;
+        width: 85%;
+    }
+ 
+    #impacto-icone {
+        grid-row: 3;
+        grid-column: 1;
+        width: 35%;
+        position: relative;
+        top: -20%;
+        left: 0;
+    }
+    
+    /*Para caso for adicionar foto nessa seção*/
+    /* #impacto-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+        justify-self: end;
+    } */
 }
 
 /* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
 @media (min-width: 768px){
-    #formacao, #diversidade, #desenvolvimento, #impacto {
-        /*margin: 40px;*/
-        margin: 6%;
-     }
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    /*Seção FORMAÇÃO*/
+    #formacao {
+       grid-template-columns: auto 30%; /*Duas colunas*/
+       grid-template-rows: auto auto; /*Duas linhas*/
+    }
+
+    #formacao h1 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+
+    #formacao-icone {
+        grid-row: 1 / -1;
+        grid-column: 2;
+        width: 80%;
+    }
+
+    #formacao p {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    /*Seção DIVERSIDADE*/
+    #diversidade {
+        grid-template-columns: 30% auto; /*2 coluna*/
+        grid-template-rows: auto auto; /*2 linhas*/
+    }
+ 
+     #diversidade h1 {
+        grid-row: 1;
+        grid-column: 2;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+     #diversidade p {
+        grid-row: 2;
+        grid-column: 2; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+     #diversidade-icone {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        width: 20%;
+        max-width: 100px;
+        position: relative;
+        top: -12%;
+        right: -25%;
+    }
+
+     #diversidade-foto {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        width: 50%;
+        max-width: 350px;
+    }
+    
+    /*Seção DESENVOLVIMENTO*/
+    #desenvolvimento {
+        grid-template-columns: auto 30%; /*1 coluna*/
+        grid-template-rows: auto auto; /*3 linhas: h1 e p*/
+    }
+ 
+     #desenvolvimento h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+     #desenvolvimento p {
+        grid-row: 2;
+        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+    }
+ 
+    #desenvolvimento-icone {
+        grid-row: 1 / -1;
+        grid-column: 2;
+        width: 50%;
+        justify-self: end;
+        position: relative;
+        top: 40%;
+        left: 20%;
+        
+    }
+
+     #desenvolvimento-foto {
+        grid-row: 1 / -1;
+        grid-column: 2;
+        width: 100%;
+        justify-self: end;
+    }
+
+    /*Seção IMPACTO*/
+    #impacto {
+        grid-template-columns: 30% auto; /*2 colunas*/
+        grid-template-rows: auto auto; /*2 linhas*/
+    }
+ 
+     #impacto h1 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+     #impacto p {
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: end;
+        width: 85%;
+    }
+ 
+    #impacto-icone {
+        grid-row: 1 / -1;
+        grid-column: 1;
+        width: 100%;
+    }
+    
+    /*Para caso for adicionar foto nessa seção*/
+    /* #impacto-foto {
+        grid-column: 1;
+        grid-row: 3;
+        width: 50%;
+        justify-self: end;
+    } */
 }
