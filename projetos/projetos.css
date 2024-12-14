@@ -1,17 +1,236 @@
+* {
+    padding: 0 5px;
+}
+/*CSS TEXTO*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--cor_5);
+}
+
+:root{
+    --cor_1: #1F2420;
+    --cor_2: #216968;
+    --cor_3: #499F78;
+    --cor_4: #9CC6A2;
+    --cor_5: #DCE1DD;
+}
+
+body{
+    background-color: var(--cor_1);
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    gap: 1rem;
+    
+}
+
+.section_1{
+    flex-direction: row-reverse;
+
+}
+
+.section_2{
+    flex-direction: row;
+
+}
+
+.section_1 p{
+    text-align: right;
+    padding: 0 3%;
+}
+
+.section_2 p{
+    text-align: left;
+    padding: 0 3%;
+}
+
+.section_2 h1{
+    padding: 0 0 0 1rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 7vh;
+    font-weight: 300;
+    
+}
+
+
+
+.section_1 img{
+    position:absolute;
+    width: 30vw;
+    right: 10%;
+
+}
+
+.section_2 img{
+    position:absolute;
+    width: 30vw;
+    margin-top: 20%;
+    right: 8%;
+
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    color: var(--cor_2);
+    width: 50vw;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0 1rem;
+    
+}
+
+/*CSS CARDS*/
+.card-list {
+    padding-block: 100px;
+    justify-content: center;
+    list-style: none;
+    display: grid;
+    gap: 3%;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--preto);
+    border-radius: 3rem;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    height: 45vw;
+}
+
+.card-item i {
+    font-size: 2rem;
+    padding: 0 0 10px 5px;
+}
+
+.card-item p {
+    margin-top: 2px;
+    font-weight: 200;
+    font-size: .65rem;
+}
+
+.card-item img{
+    height: 2rem;
+    width: 2rem;
+}
+
 /* COMEÇE POR AQUI */
 /* Celulares (para telas entre 360px e 576px) */
 @media (min-width: 360px) and (max-width: 576px) {
-
+    .card-list {
+        grid-template-columns: repeat(2, 45%);
+    }
 }
 
-/* DEPOIS AQUI */
 /* Tablet (para telas entre 576px e 768px) */
 @media (min-width: 576px) and (max-width: 767px) {
-
+    .card-list {
+        grid-template-columns: repeat(3, 175px);
+    }
 }
 
-/* E POR ULTIMO AQUI */
 /* Desktop (para telas entre 768px e 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
+    .card-list {
+        grid-template-columns: repeat(4, 15vw);
+    }
+
+    .card-item {
+        border-radius: 1.5rem;
+        height: 30vh;
+    }
+
+    .card-item i {
+        font-size: 5rem;
+        padding: 10px 0 10px 5px;
+    }
+
+    .card-item p {
+        font-size: 1.3rem;
+    }
+
+    .card-item img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    /*css dos texto*/
+
+    .section_1 img{
+        position: static;
+        right: 0;
+    }
+    .section_2 img{
+        position: absolute;
+        width: 20vw;
+        left: 9%;
+        margin-top: 10%;
+        
+    }
+
+    .section_1{
+        flex-direction: row;
+        gap: 10%;
+    
+    }
+    
+    .section_2{
+        flex-direction: row-reverse;
+    
+    }
+
+    .section_1 .texto{
+        text-align: left;
+    
+    }
+    
+    .section_2{
+        flex-direction: row-reverse;
+    
+    }
+
+    .section_1 p{
+        text-align: left;
+        padding: 0 3%;
+        width: 50vw;
+        font-size: 2rem;
+    }
+    
+    .section_2 p{
+        text-align: right;
+        padding: 0 3%;
+        margin-left: 30vw;
+        font-size: 2rem;
+    }
+
+    .section_1 h1{
+        font-size: 4rem;
+    }
+    
+    .section_2 h1{
+        font-size: 4rem;
+        left: 0;
+
+    }
 
 }
+
