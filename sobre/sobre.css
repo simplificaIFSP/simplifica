@@ -331,137 +331,142 @@ img {
 }
 
 /* E POR ULTIMO AQUI */
-/* Desktop (para telas entre 768px e 1024px) */
+/* Desktop (para telas a partir 768px) */
 @media (min-width: 768px){
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /*Seção FORMAÇÃO*/
     #formacao {
-       grid-template-columns: auto 30%; /*Duas colunas*/
-       grid-template-rows: auto auto; /*Duas linhas*/
-    }
-
-    #formacao h1 {
-        grid-column: 1;
-        grid-row: 1;
-        margin-bottom: 15px;
-    }
-
-    #formacao-icone {
+        grid-template-columns: auto 40%; /*Duas colunas*/
+        grid-template-rows: auto auto; /*Duas linhas*/
+     }
+ 
+     #formacao h1 {
+         grid-column: 1;
+         grid-row: 1;
+         margin-bottom: 50px;
+     }
+ 
+     #formacao-icone {
         grid-row: 1 / -1;
-        grid-column: 2;
-        width: 80%;
-    }
-
-    #formacao p {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    /*Seção DIVERSIDADE*/
-    #diversidade {
-        grid-template-columns: 30% auto; /*2 coluna*/
-        grid-template-rows: auto auto; /*2 linhas*/
-    }
- 
-     #diversidade h1 {
-        grid-row: 1;
-        grid-column: 2;
-        margin-bottom: 15px;
+        grid-column: 2;       
         width: 100%;
-    }
-
-     #diversidade p {
-        grid-row: 2;
-        grid-column: 2; /*Ocupar coluna 1 e 2 da linha 2*/
-    }
- 
-     #diversidade-icone {
-        grid-row: 1;
-        grid-column: 1 / -1;
-        width: 20%;
-        max-width: 100px;
+        max-width: 300px;
         position: relative;
-        top: -12%;
-        right: -25%;
-    }
-
-     #diversidade-foto {
-        grid-row: 1;
-        grid-column: 1 / -1;
-        width: 50%;
-        max-width: 350px;
-    }
-    
-    /*Seção DESENVOLVIMENTO*/
-    #desenvolvimento {
-        grid-template-columns: auto 30%; /*1 coluna*/
-        grid-template-rows: auto auto; /*3 linhas: h1 e p*/
-    }
+        top: 50px;
+     }
  
-     #desenvolvimento h1 {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-     #desenvolvimento p {
-        grid-row: 2;
-        grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
-    }
+     #formacao p {
+         grid-row: 2;
+         grid-column: 1; /*Ocupar coluna 1 e 2 da linha 2*/
+     }
  
-    #desenvolvimento-icone {
-        grid-row: 1 / -1;
-        grid-column: 2;
-        width: 50%;
-        justify-self: end;
-        position: relative;
-        top: 40%;
-        left: 20%;
-        
-    }
-
-     #desenvolvimento-foto {
-        grid-row: 1 / -1;
-        grid-column: 2;
-        width: 100%;
-        justify-self: end;
-    }
-
-    /*Seção IMPACTO*/
-    #impacto {
-        grid-template-columns: 30% auto; /*2 colunas*/
-        grid-template-rows: auto auto; /*2 linhas*/
-    }
+     /*Seção DIVERSIDADE*/
+     #diversidade {
+         grid-template-columns: 45% auto; /*2 colunas*/
+         grid-template-rows: auto auto; /*2 linhas*/
+     }
+  
+      #diversidade h1 {
+         grid-row: 1;
+         grid-column: 2;
+         margin-bottom: 50px;
+     }
  
-     #impacto h1 {
-        grid-row: 1;
-        grid-column: 2;
-    }
-
-     #impacto p {
-        grid-row: 2;
-        grid-column: 2;
-        justify-self: end;
-        width: 85%;
-    }
+      #diversidade p {
+         grid-row: 2;
+         grid-column: 2;
+     }
  
-    #impacto-icone {
-        grid-row: 1 / -1;
-        grid-column: 1;
-        width: 100%;
-    }
-    
-    /*Para caso for adicionar foto nessa seção*/
-    /* #impacto-foto {
-        grid-column: 1;
-        grid-row: 3;
-        width: 50%;
-        justify-self: end;
-    } */
+     #diversidade .container-image {
+         grid-row: 1 / -1;
+         grid-column: 1;
+         position: relative;
+     }
+  
+      #diversidade-icone {
+         width: 30%;
+         position: absolute;
+         top: 0;
+         right: 0;
+     }
+ 
+      #diversidade-foto {
+         width: 100%;
+         object-fit: contain;
+         position: relative;
+         align-self: baseline;
+         top: 10%;
+     }
+     
+     /*Seção DESENVOLVIMENTO*/
+     #desenvolvimento {
+         grid-template-columns: auto 45%; /*2 colunas*/
+         grid-template-rows: auto auto; /*2 linhas*/
+     }
+  
+      #desenvolvimento h1 {
+         grid-row: 1;
+         grid-column: 1;
+     }
+ 
+      #desenvolvimento p {
+         grid-row: 2;
+         grid-column: 1;
+     }
+ 
+     #desenvolvimento .container-image {
+         grid-row: 1 / -1;
+         grid-column: 2;
+         position: relative;
+     }
+  
+     #desenvolvimento-icone {
+         width: 25%;
+         position: absolute;
+         right: 0%;
+         bottom: 0;
+     }
+ 
+      #desenvolvimento-foto {
+         width: 100%;
+         object-fit: contain;
+         align-self: end;
+         position: relative;
+         bottom: 10%;
+     }
+ 
+     /*Seção IMPACTO*/
+     #impacto {
+         grid-template-columns: 30% auto; /*2 colunas*/
+         grid-template-rows: auto auto; /*2 linhas*/
+     }
+  
+      #impacto h1 {
+         grid-row: 1;
+         grid-column: 2;
+         padding: 50px;
+     }
+ 
+      #impacto p {
+         grid-row: 2;
+         grid-column: 2;
+         justify-self: end;
+         width: 85%;
+     }
+  
+     #impacto-icone {
+         grid-row: 1 / -1;
+         grid-column: 1;
+         width: 100%;
+         position: relative;
+         align-self: baseline;
+         top: 10%;
+     }
 }
