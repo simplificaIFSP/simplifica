@@ -1,18 +1,3 @@
-/* COMEÇE POR AQUI */
-/* Celulares (para telas entre 360px e 576px) */
-@media (min-width: 360px) and (max-width: 576px) {
-}
-
-/* DEPOIS AQUI */
-/* Tablet (para telas entre 576px e 768px) */
-@media (min-width: 576px) and (max-width: 767px) {
-}
-
-/* E POR ULTIMO AQUI */
-/* Desktop (para telas entre 768px e 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-
 /** título **/
 #title_container {
   display: flex;
@@ -27,7 +12,7 @@
   color: #216968;
 }
 
-#title_container p {
+#title_container > p {
   font-size: 20px;
   font-weight: 300;
   color: white;
@@ -36,8 +21,36 @@
 /** imagens **/
 #images_container {
   display: flex;
-  justify-content: space-around;
   padding: 4rem 2rem;
+  gap: 4px;
+}
+
+#images_container .column {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+#images_container .column div {
+  width: 50%;
+  height: 21vw;
+}
+
+#images_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#images_container .column #img_1 {
+  width: 40%;
+  height: 23vw;
+}
+
+#images_container .column #img_2 {
+  width: 60%;
+  height: 25vw;
 }
 
 /** números **/
@@ -49,34 +62,8 @@
   font-weight: 700;
 }
 
-#numbers_container .left,
-#numbers_container .right {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
 #numbers_container h1 {
   font-size: 30px;
-}
-
-#numbers_container .big {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 18px;
-  width: 70%;
-  gap: 10px;
-}
-
-#numbers_container .big h1 {
-  font-size: 50px;
-}
-
-#numbers_container .right div:last-child {
-  width: 60%;
-  align-self: end;
-  text-align: end;
 }
 
 /** mapa **/
@@ -94,7 +81,7 @@
   width: 100%;
   height: 500px;
   border: none;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 /* efeito de fade */
@@ -106,4 +93,273 @@
   height: 100px;
   background: linear-gradient(transparent, #1f2420);
   pointer-events: none;
+}
+
+/*! estilos específicos para cada tamanho de tela */
+
+/* Celulares */
+@media (max-width: 576px) {
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  #numbers_container .left,
+  #numbers_container .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #numbers_container h1 {
+    font-size: 30px;
+  }
+
+  #numbers_container .big {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    width: 70%;
+    gap: 10px;
+  }
+
+  #numbers_container .big h1 {
+    font-size: 50px;
+  }
+
+  #numbers_container .right div:last-child {
+    width: 60%;
+    align-self: end;
+    text-align: end;
+  }
+
+  .gradient_line,
+  .infra_text,
+  .localization_pill {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  /** título **/
+  #title_container {
+    padding: 4rem 0 4rem 8rem;
+    width: 50%;
+  }
+
+  #title_container h1 {
+    font-size: 70px;
+  }
+
+  #title_container > p {
+    font-size: 26px;
+  }
+
+  /** botão de localização **/
+  .localization_pill {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #dce1dd;
+    border-radius: 20px;
+    gap: 8px;
+    color: black;
+    padding: 14px 20px;
+  }
+
+  .localization_pill .address_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .localization_pill p {
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .localization_pill span {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .localization_pill i {
+    font-size: 1.5rem;
+  }
+
+  .localization_pill > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .vertical_line {
+    width: 1px;
+    background: black;
+  }
+
+  .localization_pill a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #hero_container {
+    display: flex;
+    height: 85vh;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+
+  /** imagens **/
+  #images_container {
+    padding: 6rem 0 4rem 4rem;
+    gap: 2rem;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  #images_container .column {
+    width: fit-content;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #images_container .column div {
+    width: 100%;
+    height: 15vw;
+  }
+
+  #images_container .column #img_1 {
+    width: 50%;
+    height: 16vw;
+  }
+
+  #images_container .column #img_2 {
+    width: 70%;
+    height: 14vw;
+  }
+
+  #images_container .column #img_3 {
+    height: 18vw;
+    width: 80%;
+  }
+
+  #images_container .column #img_4 {
+    width: 55%;
+    height: 13vw;
+  }
+
+  #images_container .column:last-child {
+    padding-top: 6rem;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+
+  #images_container img {
+    border-radius: 2.5rem;
+  }
+
+  #img_2 img {
+    content: url("../images/OficinaIFSP.jpeg");
+  }
+
+  #img_3 img {
+    content: url("../images/SalaDeAulaIFSP_2.jpeg");
+  }
+
+  /** números **/
+  #numbers_container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #numbers_container .left,
+  #numbers_container .right {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  #numbers_container h1 {
+    font-size: 38px;
+  }
+
+  #numbers_container .left div,
+  #numbers_container .right div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 7.5rem;
+  }
+
+  .infra_text {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 4rem;
+  }
+
+  .gradient_line {
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(252, 252, 252, 0),
+      rgba(255, 255, 255, 0.51)
+    );
+    height: 1px;
+  }
+
+  .reverse {
+    transform: rotate(180deg);
+  }
+
+  /** mapa **/
+
+  #map_container {
+    padding: 16rem 6rem;
+    padding-bottom: 0;
+  }
+
+  #map_container iframe {
+    border-radius: 3rem 3rem 0 0;
+    height: 70vh;
+  }
+}
+
+/* Ajustes de fontes para tamanhos intermediários */
+@media (min-width: 768px) and (max-width: 991px) {
+  #title_container h1 {
+    font-size: 50px;
+  }
+
+  #title_container > p {
+    font-size: 22px;
+  }
+
+  .localization_pill p {
+    font-size: 18px;
+  }
+
+  .localization_pill span {
+    font-size: 14px;
+  }
+
+  .localization_pill i {
+    font-size: 1.3rem;
+  }
+
+  .localization_pill a {
+    font-size: 18px;
+  }
 }
