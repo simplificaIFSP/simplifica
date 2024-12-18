@@ -1,0 +1,51 @@
+:root{
+    --preto: #161816;
+    --preto-escuro: #1f2420;
+    --verde-marinho: #216968;
+    --verde: #499f78;
+    --verde-claro: #9cc6a2;
+    --branco: #dce1dd;
+}
+
+/* Celulares (para telas entre 360px e 576px) */
+@media (min-width: 360px) and (max-width: 576px) {
+    .colaboradores{
+        padding: 2rem;
+        padding-inline: 1rem;
+        min-height: 78svh;
+    }    
+    .colaboradores h1{
+        color: var(--verde-marinho);
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .container{
+        padding-block: 2rem;
+    }
+    .container h3{
+        color: var(--branco);
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+    .contributors-list{
+        padding-inline: 1.75rem;
+    }.contributors-list li{
+        list-style: none;
+        padding: 1rem;
+        font-weight: bold;
+        margin-block: 1.1rem;
+        background-color: var(--verde-marinho);
+        border-radius: 10px;
+    }
+}
+
+/* Tablet (para telas entre 576px e 768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* Desktop (para telas entre 768px e 1024px) */
+@media (min-width: 768px) {
+    
+}

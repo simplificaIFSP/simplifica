@@ -181,6 +181,7 @@ body{
     .nav_header{
         width: 100%;
         padding: 2rem;
+        padding-inline: 0.8rem;
     }
 
     .logo_header, .espaco_header{
